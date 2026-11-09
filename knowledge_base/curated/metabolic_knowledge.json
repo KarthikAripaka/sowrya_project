@@ -1,0 +1,67 @@
+[
+  {
+    "id": "medlineplus-glucose-fasting",
+    "topic": "Comprehensive Metabolic Panel",
+    "subtopic": "Fasting Blood Glucose",
+    "source_org": "MedlinePlus - National Library of Medicine (NIH)",
+    "title": "Blood Glucose Test: MedlinePlus Medical Test",
+    "source_url": "https://medlineplus.gov/lab-tests/blood-glucose-test/",
+    "retrieval_date": "2026-03-01",
+    "category": "Endocrinology",
+    "keywords": ["glucose", "fasting blood sugar", "fbs", "diabetes", "hyperglycemia", "hypoglycemia"],
+    "content": "A fasting blood glucose test measures the amount of glucose (sugar) in your blood after fasting for at least 8 to 12 hours. A normal fasting blood glucose level is between 70 and 99 mg/dL (3.9 to 5.5 mmol/L). A fasting level between 100 and 125 mg/dL indicates prediabetes (impaired fasting glucose). A fasting blood glucose of 126 mg/dL (7.0 mmol/L) or higher on two separate tests meets the diagnostic criteria for diabetes mellitus. Hypoglycemia (glucose below 70 mg/dL) can cause shakiness, sweating, palpitations, confusion, and requires rapid correction.",
+    "clinical_significance": "Primary screening tool for carbohydrates metabolism disorders, diabetes mellitus, and metabolic syndrome."
+  },
+  {
+    "id": "medlineplus-hba1c",
+    "topic": "Glycemic Control",
+    "subtopic": "Hemoglobin A1c (HbA1c)",
+    "source_org": "MedlinePlus - National Library of Medicine (NIH)",
+    "title": "Hemoglobin A1c (HbA1c) Test: MedlinePlus",
+    "source_url": "https://medlineplus.gov/lab-tests/hemoglobin-a1c-hba1c-test/",
+    "retrieval_date": "2026-03-01",
+    "category": "Endocrinology",
+    "keywords": ["hba1c", "glycated hemoglobin", "glycohemoglobin", "a1c", "diabetes control"],
+    "content": "The hemoglobin A1c (HbA1c) test measures the average percentage of blood sugar attached to your hemoglobin over the preceding 2 to 3 months. Normal HbA1c is below 5.7%. An HbA1c between 5.7% and 6.4% indicates prediabetes. An HbA1c of 6.5% or higher on two separate tests indicates diabetes. For many adults with established diabetes, an HbA1c target below 7.0% is commonly recommended by major endocrine guidelines, individualized according to age and comorbidities.",
+    "clinical_significance": "Gold standard for monitoring chronic glycemic control and assessing long-term microvascular risk."
+  },
+  {
+    "id": "medlineplus-renal-creatinine",
+    "topic": "Renal Function",
+    "subtopic": "Serum Creatinine & eGFR",
+    "source_org": "MedlinePlus - National Library of Medicine (NIH)",
+    "title": "Creatinine Test: MedlinePlus Medical Test",
+    "source_url": "https://medlineplus.gov/lab-tests/creatinine-test/",
+    "retrieval_date": "2026-03-01",
+    "category": "Nephrology",
+    "keywords": ["creatinine", "serum creatinine", "egfr", "kidney function", "renal failure", "nephrology"],
+    "content": "Creatinine is a chemical waste product produced by muscle metabolism and filtered out by healthy kidneys. The normal range for serum creatinine is approximately 0.7 to 1.3 mg/dL for adult males and 0.5 to 1.1 mg/dL for adult females. An elevated creatinine level signals impaired renal clearance, which can stem from dehydration, urinary obstruction, nephrotoxic medications, or intrinsic kidney disease. The estimated Glomerular Filtration Rate (eGFR) is calculated from serum creatinine, age, and sex; an eGFR above 90 mL/min/1.73m2 is considered normal, whereas values below 60 mL/min/1.73m2 for more than 3 months indicate chronic kidney disease.",
+    "clinical_significance": "Crucial marker for renal clearance. Sudden elevations indicate Acute Kidney Injury (AKI) requiring urgent evaluation."
+  },
+  {
+    "id": "medlineplus-lipid-cholesterol",
+    "topic": "Lipid Profile",
+    "subtopic": "Total Cholesterol & LDL / HDL",
+    "source_org": "World Health Organization (WHO) & MedlinePlus",
+    "title": "Cholesterol Levels: MedlinePlus Medical Test",
+    "source_url": "https://medlineplus.gov/lab-tests/cholesterol-levels/",
+    "retrieval_date": "2026-03-01",
+    "category": "Cardiology",
+    "keywords": ["cholesterol", "ldl", "hdl", "triglycerides", "lipid panel", "atherosclerosis", "cardiovascular"],
+    "content": "A lipid panel measures total cholesterol, high-density lipoprotein (HDL), low-density lipoprotein (LDL), and triglycerides. Desirable total cholesterol is generally below 200 mg/dL (5.2 mmol/L). LDL cholesterol is often termed 'bad cholesterol' because high levels cause arterial plaque buildup; optimal LDL is generally below 100 mg/dL (<70 mg/dL for high-risk cardiovascular patients). HDL is 'good cholesterol', ideally 40 mg/dL or higher in men and 50 mg/dL or higher in women. Triglycerides are normal when under 150 mg/dL. Elevated LDL and triglycerides substantially elevate risks of coronary artery disease and stroke.",
+    "clinical_significance": "Primary cardiovascular risk stratification parameter. Guides lifestyle interventions and statin pharmacotherapy."
+  },
+  {
+    "id": "medlineplus-hepatic-enzymes",
+    "topic": "Hepatic Function",
+    "subtopic": "Liver Enzymes (ALT, AST, Bilirubin)",
+    "source_org": "MedlinePlus - National Library of Medicine (NIH)",
+    "title": "Liver Function Tests: MedlinePlus Medical Test",
+    "source_url": "https://medlineplus.gov/lab-tests/liver-function-tests/",
+    "retrieval_date": "2026-03-01",
+    "category": "Gastroenterology",
+    "keywords": ["alt", "alanine aminotransferase", "ast", "aspartate aminotransferase", "liver enzymes", "bilirubin", "hepatitis"],
+    "content": "Alanine transaminase (ALT) and aspartate transaminase (AST) are enzymes primarily found in liver cells. Typical normal ranges are approximately 7 to 56 U/L for ALT and 8 to 48 U/L for AST. When liver cells are injured or inflamed, ALT and AST leak into the bloodstream. Markedly elevated ALT/AST (>10 times upper limit) suggests acute viral hepatitis, ischemic hepatitis, or toxic acetaminophen injury. Moderate elevations are frequently seen in non-alcoholic fatty liver disease (NAFLD/MASLD), chronic hepatitis, or alcohol-related liver disease. Total bilirubin measures yellow pigment from red cell breakdown; levels above 1.2 mg/dL may cause visible jaundice.",
+    "clinical_significance": "Sensitive indicators of hepatocellular injury. Requires clinical correlation with abdominal ultrasound and viral serology."
+  }
+]

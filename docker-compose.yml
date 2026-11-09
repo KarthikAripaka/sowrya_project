@@ -1,0 +1,93 @@
+version: '3.8'
+
+services:
+  # ==========================================
+  # FastAPI Backend (Groq Cloud AI, RAG, NLP, OCR)
+  # ==========================================
+  backend:
+    build:
+      context: .
+      dockerfile: docker/backend.Dockerfile
+    container_name: medi_ai_backend
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - APP_ENV=production
+      - DATABASE_URL=postgresql://postgres:postgres@db:5432/medical_ai
+      - REDIS_URL=redis://redis:6379/0
+      - LLM_PROVIDER=groq
+      - GROQ_API_KEY=${GROQ_API_KEY:-}
+      - GROQ_MODEL=${GROQ_MODEL:-llama-3.3-70b-versatile}
+      - OCR_PROVIDER=cloud_ocr
+      - OCR_API_KEY=${OCR_API_KEY:-}
+      - IMAGING_API_URL=${IMAGING_API_URL:-}
+      - IMAGING_API_KEY=${IMAGING_API_KEY:-}
+      - FRONTEND_URL=http://localhost:3000
+      - JWT_SECRET=${JWT_SECRET:-medical_ai_assistant_production_secure_secret_2026}
+    volumes:
+      - backend_storage:/app/storage
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/v1/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ==========================================
+  # Next.js 14 Frontend UI
+  # ==========================================
+  frontend:
+    build:
+      context: .
+      dockerfile: docker/frontend.Dockerfile
+    container_name: medi_ai_frontend
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:8000/api/v1
+    depends_on:
+      - backend
+
+  # ==========================================
+  # PostgreSQL Database with pgvector
+  # ==========================================
+  db:
+    image: pgvector/pgvector:pg16
+    container_name: medi_ai_postgres
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=medical_ai
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d medical_ai"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  # ==========================================
+  # Redis Cache
+  # ==========================================
+  redis:
+    image: redis:7-alpine
+    container_name: medi_ai_redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+
+volumes:
+  backend_storage:
+  postgres_data:
+  redis_data:

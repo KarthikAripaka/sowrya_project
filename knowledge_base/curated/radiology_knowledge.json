@@ -1,0 +1,67 @@
+[
+  {
+    "id": "radiologyinfo-cardiomegaly",
+    "topic": "Chest Radiography",
+    "subtopic": "Cardiomegaly (Enlarged Heart)",
+    "source_org": "RadiologyInfo.org - Radiological Society of North America (RSNA) & ACR",
+    "title": "Chest X-ray (Chest Radiography) Findings: Cardiomegaly",
+    "source_url": "https://www.radiologyinfo.org/en/info/chestrad",
+    "retrieval_date": "2026-03-01",
+    "category": "Radiology",
+    "keywords": ["cardiomegaly", "enlarged heart", "cardiothoracic ratio", "heart size", "congestive heart failure"],
+    "content": "Cardiomegaly refers to an enlarged cardiac silhouette observed on a posteroanterior (PA) chest radiograph. Radiologically, it is defined when the cardiothoracic ratio (maximum transverse cardiac diameter divided by maximum inner thoracic diameter) exceeds 0.50 (50%). Causes include systemic arterial hypertension, ischemic cardiomyopathy, valvular heart disease, pericardial effusion, and dilated cardiomyopathy. Note that anteroposterior (AP) portable films can artifactually magnify heart size and mimic cardiomegaly. Clinical correlation with echocardiography and patient symptoms (dyspnea, orthopnea, peripheral edema) is essential.",
+    "clinical_significance": "Research AI finding requires confirmation via upright PA chest film and formal echocardiogram to distinguish myocardial enlargement from pericardial fluid."
+  },
+  {
+    "id": "radiologyinfo-pneumonia-consolidation",
+    "topic": "Chest Radiography",
+    "subtopic": "Pneumonia and Pulmonary Consolidation",
+    "source_org": "RadiologyInfo.org & World Health Organization (WHO)",
+    "title": "Pneumonia Detection on Chest Radiography",
+    "source_url": "https://www.radiologyinfo.org/en/info/pneumonia",
+    "retrieval_date": "2026-03-01",
+    "category": "Radiology",
+    "keywords": ["pneumonia", "consolidation", "air bronchogram", "infiltrate", "pulmonary infection"],
+    "content": "On a chest X-ray, pulmonary consolidation appears as an area of increased opacity (whitening) in lung parenchyma where air in alveolar spaces has been replaced by fluid, pus, or inflammatory exudate. Classic signs include air bronchograms (dark branching airways visible within dense consolidation) and silhouette sign (loss of normal anatomical borders such as the hemidiaphragm or heart border). Bacterial, viral, and atypical pathogens can cause lobar, bronchopneumonic, or interstitial patterns. Accurate diagnosis requires correlating radiographic opacities with patient temperature, auscultation, sputum, and white blood cell count.",
+    "clinical_significance": "Preliminary AI detection of airspace opacities must be correlated with clinical symptoms (fever, cough, hypoxemia) and antibiotic guidelines."
+  },
+  {
+    "id": "radiologyinfo-pleural-effusion",
+    "topic": "Chest Radiography",
+    "subtopic": "Pleural Effusion (Fluid Around Lungs)",
+    "source_org": "RadiologyInfo.org - RSNA & American College of Radiology",
+    "title": "Pleural Effusion: Imaging Evaluation",
+    "source_url": "https://www.radiologyinfo.org/en/info/pleural-effusion",
+    "retrieval_date": "2026-03-01",
+    "category": "Radiology",
+    "keywords": ["pleural effusion", "costophrenic angle", "meniscus sign", "fluid collection", "blunting"],
+    "content": "A pleural effusion is an abnormal accumulation of fluid in the pleural space between the parietal and visceral pleura. On an upright chest X-ray, pleural effusion typically presents as blunting of the sharp lateral costophrenic angle (requiring approximately 175-200 mL of fluid to be visible on PA projection). Larger effusions produce a concave upward fluid line (meniscus sign) and homogeneous basal opacification. Effusions are broadly classified into transudates (heart failure, cirrhosis, nephrotic syndrome) and exudates (parapneumonic, malignancy, pulmonary embolism, tuberculosis).",
+    "clinical_significance": "Detection indicates fluid accumulation in the thoracic cavity; clinical assessment and diagnostic thoracentesis or ultrasound may be indicated."
+  },
+  {
+    "id": "radiologyinfo-pneumothorax",
+    "topic": "Chest Radiography",
+    "subtopic": "Pneumothorax (Collapsed Lung)",
+    "source_org": "RadiologyInfo.org - RSNA & ACR",
+    "title": "Pneumothorax: Chest Radiography",
+    "source_url": "https://www.radiologyinfo.org/en/info/pneumothorax",
+    "retrieval_date": "2026-03-01",
+    "category": "Radiology",
+    "keywords": ["pneumothorax", "visceral pleural line", "collapsed lung", "tension pneumothorax", "air in pleural space"],
+    "content": "A pneumothorax occurs when air enters the pleural space, causing partial or complete collapse of the lung. On an upright chest radiograph, the hallmark radiographic sign is a thin, sharp visceral pleural line separated from the chest wall by a peripheral lucency (hyperlucent space completely void of pulmonary vascular markings). It may occur spontaneously (primary in young tall individuals, secondary in COPD) or secondary to trauma/iatrogenic causes. Tension pneumothorax is an immediate medical emergency characterized by contralateral mediastinal shift, tracheal deviation, and hemodynamic compromise.",
+    "clinical_significance": "Potentially urgent finding. Any suspicion of tension pneumothorax requires immediate emergency clinical evaluation."
+  },
+  {
+    "id": "radiologyinfo-atelectasis",
+    "topic": "Chest Radiography",
+    "subtopic": "Atelectasis (Partial Lung Collapse)",
+    "source_org": "RadiologyInfo.org - RSNA",
+    "title": "Atelectasis on Chest Radiographs",
+    "source_url": "https://www.radiologyinfo.org/en/info/atelectasis",
+    "retrieval_date": "2026-03-01",
+    "category": "Radiology",
+    "keywords": ["atelectasis", "volume loss", "discoidal", "linear atelectasis", "subsegmental collapse"],
+    "content": "Atelectasis refers to the collapse or incomplete expansion of pulmonary parenchyma leading to loss of lung volume. Radiographic signs include linear or plate-like (discoid) opacities, displacement of interlobar fissures toward the affected area, elevation of the ipsilateral hemidiaphragm, and crowding of pulmonary vessels and bronchi. It commonly occurs postoperatively due to shallow breathing or hypoventilation, or secondary to bronchial mucus plugging, external bronchial compression, or surfactant deficiency. Differentiating atelectasis from infectious consolidation often requires tracking change over time with deep breathing maneuvers.",
+    "clinical_significance": "Common benign cause of focal lung opacity, often responsive to incentive spirometry and chest physiotherapy."
+  }
+]

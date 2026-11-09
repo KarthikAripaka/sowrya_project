@@ -1,0 +1,54 @@
+[
+  {
+    "id": "medlineplus-cbc-hemoglobin",
+    "topic": "Complete Blood Count",
+    "subtopic": "Hemoglobin",
+    "source_org": "MedlinePlus - National Library of Medicine (NIH)",
+    "title": "Hemoglobin Test: MedlinePlus Medical Test",
+    "source_url": "https://medlineplus.gov/lab-tests/hemoglobin-test/",
+    "retrieval_date": "2026-03-01",
+    "category": "Hematology",
+    "keywords": ["hemoglobin", "hgb", "hb", "anemia", "red blood cells", "erythrocytes", "oxygen"],
+    "content": "Hemoglobin is a protein in your red blood cells that carries oxygen from your lungs to the rest of your body. It also returns carbon dioxide from your tissues back to your lungs. Normal adult hemoglobin reference ranges typically span 13.8 to 17.2 g/dL (grams per deciliter) for adult males and 12.1 to 15.1 g/dL for adult non-pregnant females, although individual laboratory ranges may vary slightly. Low hemoglobin levels usually indicate anemia, which can be caused by iron deficiency, vitamin B12 deficiency, blood loss, or bone marrow disorders. High hemoglobin levels (polycythemia) can occur with chronic dehydration, smoking, high altitude, or lung disease like COPD.",
+    "clinical_significance": "Essential parameter for oxygen transport capacity. Low values require evaluating for blood loss or nutritional deficiencies. High values suggest hemoconcentration or chronic hypoxia."
+  },
+  {
+    "id": "medlineplus-cbc-wbc",
+    "topic": "Complete Blood Count",
+    "subtopic": "White Blood Cell Count (WBC)",
+    "source_org": "MedlinePlus - National Library of Medicine (NIH)",
+    "title": "WBC (White Blood Cell) Count: MedlinePlus Medical Test",
+    "source_url": "https://medlineplus.gov/lab-tests/wbc-count/",
+    "retrieval_date": "2026-03-01",
+    "category": "Hematology",
+    "keywords": ["wbc", "white blood cells", "leukocytes", "infection", "inflammation", "leukocytosis", "leukopenia"],
+    "content": "A white blood cell (WBC) count measures the number of white blood cells in your blood. White blood cells are part of your immune system and help protect against infections and disease. Normal adult reference ranges are generally between 4,500 and 11,000 cells per microliter (mcL) or 4.5 to 11.0 x 10^9/L. An elevated WBC count (leukocytosis) most commonly signifies bacterial or viral infections, physiological stress, systemic inflammation, tissue necrosis, or certain hematologic conditions. A low WBC count (leukopenia) may occur with viral illnesses, bone marrow suppression, severe overwhelming sepsis, autoimmune conditions, or medication effects.",
+    "clinical_significance": "Key biomarker for immune and inflammatory response. Requires clinical correlation with symptoms and differential cell counts."
+  },
+  {
+    "id": "medlineplus-cbc-platelets",
+    "topic": "Complete Blood Count",
+    "subtopic": "Platelet Count",
+    "source_org": "MedlinePlus - National Library of Medicine (NIH)",
+    "title": "Platelet Tests: MedlinePlus Medical Test",
+    "source_url": "https://medlineplus.gov/lab-tests/platelet-tests/",
+    "retrieval_date": "2026-03-01",
+    "category": "Hematology",
+    "keywords": ["platelets", "thrombocytes", "plt", "clotting", "thrombocytopenia", "thrombocytosis"],
+    "content": "Platelets (thrombocytes) are tiny blood cell fragments that help your blood clot to prevent or stop bleeding. A normal platelet count in adults ranges from 150,000 to 450,000 platelets per microliter (150-450 x 10^9/L). A count below 150,000 is known as thrombocytopenia and increases the risk of bruising, petechiae, or prolonged bleeding. Potential causes include medication reactions, immune destruction (ITP), splenic sequestration, or viral infections. A platelet count greater than 450,000 is thrombocytosis, which may represent a reactive response to acute infection, iron deficiency, or a primary myeloproliferative disorder.",
+    "clinical_significance": "Crucial for hemostasis. Severe thrombocytopenia (<50,000/mcL) carries spontaneous bleeding risk."
+  },
+  {
+    "id": "medlineplus-cbc-rbc",
+    "topic": "Complete Blood Count",
+    "subtopic": "Red Blood Cell Count (RBC)",
+    "source_org": "MedlinePlus - National Library of Medicine (NIH)",
+    "title": "RBC Count: MedlinePlus Medical Test",
+    "source_url": "https://medlineplus.gov/lab-tests/red-blood-cell-rbc-count/",
+    "retrieval_date": "2026-03-01",
+    "category": "Hematology",
+    "keywords": ["rbc", "red blood cells", "erythrocytes", "hematocrit", "mcv", "mch"],
+    "content": "A red blood cell (RBC) count is a blood test that measures how many red blood cells you have. Standard reference ranges are 4.7 to 6.1 million cells per microliter for adult men and 4.2 to 5.4 million cells per microliter for adult women. Hematocrit (Hct) represents the proportion of blood volume made up of red blood cells, typically 41% to 50% in men and 36% to 48% in women. Low RBC counts and low hematocrit indicate anemia, hemorrhage, or hemodilution. High counts point toward erythrocytosis, hypoxia, or severe dehydration.",
+    "clinical_significance": "Reflects overall oxygen delivery capacity when assessed alongside hemoglobin and red cell indices."
+  }
+]
