@@ -3,7 +3,24 @@
  * Connects directly to FastAPI backend on port 8000 or via Next.js proxy
  */
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api/v1';
+/**
+ * Dynamically resolve backend API Base URL:
+ * 1. Explicit NEXT_PUBLIC_API_URL environment variable (if set in Vercel)
+ * 2. If running in a remote browser (e.g. *.vercel.app), use relative '/api/v1' to route through Next.js proxy rewrite
+ * 3. Local fallback to http://localhost:8000/api/v1
+ */
+function getApiBase(): string {
+  if (process.env.NEXT_PUBLIC_API_URL) {
+    return process.env.NEXT_PUBLIC_API_URL.replace(/\/$/, '');
+  }
+  if (typeof window !== 'undefined') {
+    const host = window.location.hostname;
+    if (host !== 'localhost' && host !== '127.0.0.1') {
+      return '/api/v1';
+    }
+  }
+  return 'http://localhost:8000/api/v1';
+}
 
 export function getAuthToken(): string | null {
   if (typeof window === 'undefined') return null;
@@ -57,10 +74,22 @@ async function fetchAPI(endpoint: string, options: RequestInit = {}) {
     headers.set('Content-Type', 'application/json');
   }
 
-  const res = await fetch(`${API_BASE}${endpoint}`, {
-    ...options,
-    headers,
-  });
+  const apiBase = getApiBase();
+  const url = `${apiBase}${endpoint}`;
+
+  let res: Response;
+  try {
+    res = await fetch(url, {
+      ...options,
+      headers,
+    });
+  } catch (err: any) {
+    const isRemote = typeof window !== 'undefined' && window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1';
+    const guidance = isRemote
+      ? "The Vercel frontend is online, but the FastAPI backend is not yet connected. Deploy your backend to a cloud host (Render/Railway) or set NEXT_PUBLIC_API_URL in your Vercel Environment Variables."
+      : "Cannot reach FastAPI backend. Make sure the backend server is running on port 8000 (.\\start_backend.bat).";
+    throw new Error(`Backend Connection Unavailable: ${guidance}`);
+  }
 
   if (!res.ok) {
     let errMsg = `Request failed: ${res.statusText}`;
@@ -133,7 +162,7 @@ export const api = {
   },
 
   getReportPdfUrl(id: string | number) {
-    return `${API_BASE}/reports/${id}/pdf`;
+    return `${getApiBase()}/reports/${id}/pdf`;
   },
 
   // X-rays
@@ -153,7 +182,7 @@ export const api = {
   },
 
   getXrayPdfUrl(id: string | number) {
-    return `${API_BASE}/analysis/xray/${id}/pdf`;
+    return `${getApiBase()}/analysis/xray/${id}/pdf`;
   },
 
   // History
